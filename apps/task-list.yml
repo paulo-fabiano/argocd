@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/paulo-fabiano/task-list-devops.git
-    path: k8s/manifests/application/01_namespace.yaml
+    path: k8s/manifests/application
 
   destination:
     server: https://kubernetes.default.svc
