@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: api-d1
+  namespace: argocd
+spec:
+  project: prod-p1
+
+  source:
+    repoURL: https://github.com/paulo-fabiano/task-list-devops.git
+    path: k8s/manifests/application/01_namespace.yaml
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: task-list-devops
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
