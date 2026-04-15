@@ -3,6 +3,8 @@ kind: AppProject
 metadata:
   name: prod-p1
   namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1" 
 spec:
   description: Ambiente de Produção
 
