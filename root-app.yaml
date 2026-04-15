@@ -8,6 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/paulo-fabiano/argocd
+    targetRevision: main
     path: .
 
   destination:
